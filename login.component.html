@@ -1,0 +1,20 @@
+<div class="container">
+        <div class="card ">
+            <div class="card-header bg-primary">Tiles</div>
+             <div class="card-body o">
+<div><label>Name</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]='name'>
+    {{name}}
+</div>
+<div><label>Password</label>
+        <input type="password" class="form-control" [(ngModel)]='password'>
+    </div>
+    <div>
+            <input type="submit" (click)='isvalid()' value="login" class="btn btn-success">
+        </div>
+
+             </div> 
+           
+        </div>   <div class="alert alert-warning" *ngIf='errorshow'>
+            please enter the input field
+        </div> </div>
